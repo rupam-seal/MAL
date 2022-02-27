@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn-up" onclick="countUp()">Up</button>
+    <h5 id="txt">0</h5>
+
+    <script>
+        let count = 0;
+
+        function countUp(){
+            count += 1;
+            updateCount();
+        }
+
+        function updateCount(){
+            let element = document.getElementById('txt');
+            element.innerText = count;
+        }
+        
+    </script>
+</body>
+</html>
