@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function cartTotal(cartArray){
+            let s = 0;
+            cartArray.forEach(function(i){
+                s += i.price * i.quantity;
+            });
+            alert(s)
+        }
+        cartTotal([
+            { name: 'Apple', price: 5, quantity: 2 },
+            { name: 'Orange', price: 3, quantity: 3 }
+        ]);
+    </script>
+</body>
+</html>
