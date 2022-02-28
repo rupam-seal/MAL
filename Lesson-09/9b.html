@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="num-inp">
+    <button onclick="convertToCm()">Convert to cm</button>
+    <button onclick="convertToIn()">Convert to Inch</button>
+    <div id="txt-convert"></div>
+
+    <script>
+        const txtConvert = document.getElementById('txt-convert');
+        const numInput = document.getElementById('num-inp');
+
+        function convertToCm(){
+            const toCm = parseInt(numInput.value)*2.54;
+            render(toCm)
+        }
+
+        function convertToIn(){
+            const toIn = parseInt(numInput.value)/2.54;
+            render(toIn)
+        }
+
+        function render(num){
+            txtConvert.innerHTML = ''
+            const element = document.createElement('div');
+            element.innerHTML = num;
+            txtConvert.appendChild(element);  
+        }
+    </script>
+
+</body>
+</html>
