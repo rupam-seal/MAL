@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>Apple $3<button onclick="add('a')">Add</button></div>
+    <div>Orange $4<button onclick="add('o')">Add</button></div>
+    <div>Egg $2<button onclick="add('e')">Add</button></div>
+    <script>
+        let total = 0;
+        function add(n){
+            if (n==='a'){
+                total+=3;
+            } else if (n==='o'){
+                total+=4;
+            } else if (n==='e'){
+                total+=2;
+            }
+        }
+    </script>
+</body>
+</html>
