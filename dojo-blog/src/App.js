@@ -2,6 +2,7 @@ import Home from './Home';
 import Navbar from './Navbar';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Create from './Create';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
         <div className="content">
           <Routes>
             <Route path="/" element={<Home />} exact />
-            <Route path="/create" element={<Home />} />
+            <Route path="/create" element={<Create />} />
             <Route path="/blog" element={<Home />} />
           </Routes>
         </div>
