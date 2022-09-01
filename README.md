@@ -1,4 +1,4 @@
-# GSAP-Tut-Web-Dev-Simplified
+# GSAP-Tutorial
 learning animations using javascript library gsap from  Web Dev Simplified youtube channel
 
 ## Concept learned from this
