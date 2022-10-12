@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const containerVariant = {
   hidden: {
@@ -11,6 +11,12 @@ const containerVariant = {
     transition: {
       delay: 1.5,
       duration: 1.5,
+    },
+  },
+  exit: {
+    x: '-100vw',
+    transition: {
+      ease: 'easeInOut',
     },
   },
 };
@@ -34,6 +40,7 @@ const Home = () => {
       variants={containerVariant}
       initial="hidden"
       animate="visible"
+      exit="exit"
     >
       <h2 animate={{}}>Welcome to Pizza Joint</h2>
       <Link to="/base">
